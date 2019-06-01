@@ -14,7 +14,7 @@ describe('App', () => {
   
   it('should have h1 element', () => {
     const component =  new Constructor().$mount()
-    expect(component.$el.querySelector('h1')).toBeDefined()
+    expect(component.$el.querySelector('h1')).not.undefined
   })
 
   it('should render props [message] as its text content.', async () => {
@@ -24,8 +24,7 @@ describe('App', () => {
     component.message = expected
 
     await Vue.nextTick()
-    console.log(component.$el)
-    expect(component.$el.innerHTML).toEqual(expected)
+    expect(component.$el.innerHTML).to.eq(expected)
   })
 
 })

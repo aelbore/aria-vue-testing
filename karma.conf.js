@@ -6,7 +6,7 @@ const { nodeResolve, commonjs, typescript2, createTSConfig } = require('aria-bui
 
 module.exports = function(config) {
   config.set({
-    frameworks: ['jasmine'],
+    frameworks: ['mocha', 'chai'],
 
     files: [
       'tests/**/*.spec.js'
@@ -17,7 +17,8 @@ module.exports = function(config) {
     },
 
     plugins: [
-      'karma-jasmine',
+      'karma-mocha',
+      'karma-chai',
       'karma-mocha-reporter',
       'karma-chrome-launcher',
       'karma-coverage-istanbul-reporter',
