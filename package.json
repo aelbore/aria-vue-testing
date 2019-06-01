@@ -1,0 +1,32 @@
+{
+  "name": "aria-vue-testing",
+  "version": "1.0.0",
+  "description": "Unit Testing for vue js using aria tools",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aelbore/aria-vue-testing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aelbore/aria-vue-testing/issues"
+  },
+  "homepage": "https://github.com/aelbore/aria-vue-testing#readme",
+  "devDependencies": {
+    "aria-tools": "0.0.6",
+    "karma-rollup-preprocessor": "^7.0.0",
+    "rollup-plugin-strict-alias": "^1.0.0",
+    "rollup-plugin-vue": "^5.0.0",
+    "typescript": "^3.5.1",
+    "vue-template-compiler": "2.6.10"
+  },
+  "dependencies": {
+    "vue": "2.6.10"
+  }
+}
