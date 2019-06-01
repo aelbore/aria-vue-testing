@@ -24,7 +24,6 @@ describe('App', () => {
     component.message = expected
 
     await Vue.nextTick()
-    console.log(component.$el)
     expect(component.$el.innerHTML).toEqual(expected)
   })
 

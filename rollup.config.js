@@ -4,8 +4,6 @@ import buble from 'rollup-plugin-buble';
 
 import { terser, nodeResolve, commonjs } from 'aria-build'
 
-const isProduction = true;
-
 const plugins = [
   alias({
     vue: 'node_modules/vue/dist/vue.js'
@@ -13,7 +11,7 @@ const plugins = [
   nodeResolve(),
   vue({
     template: {
-      isProduction
+      isProduction: true
     },
     css: true
   }),
