@@ -4,6 +4,7 @@
   "description": "Unit Testing for vue js using aria tools",
   "main": "index.js",
   "scripts": {
+    "build.test": "ts-node tools/build.test",
     "build": "rollup -c",
     "test": "karma start"
   },
@@ -20,18 +21,8 @@
   "homepage": "https://github.com/aelbore/aria-vue-testing#readme",
   "devDependencies": {
     "@types/chai": "^4.1.7",
-    "aria-build": "0.0.2",
-    "chai": "^4.2.0",
-    "karma": "^4.1.0",
-    "karma-chai": "^0.1.0",
-    "karma-chrome-launcher": "^2.2.0",
-    "karma-coverage-istanbul-reporter": "^2.0.5",
-    "karma-mocha": "^1.3.0",
-    "karma-mocha-reporter": "^2.2.5",
-    "karma-rollup-preprocessor": "^7.0.0",
-    "mocha": "^6.1.4",
-    "rollup-plugin-istanbul": "^2.0.1",
-    "rollup-plugin-strict-alias": "^1.0.0",
+    "aria-build": "0.0.3",
+    "aria-test": "git+https://github.com/aelbore/aria-test.git",
     "rollup-plugin-vue": "^5.0.0",
     "typescript": "^3.5.1",
     "vue-template-compiler": "2.6.10"
