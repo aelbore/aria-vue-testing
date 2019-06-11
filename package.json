@@ -6,7 +6,7 @@
   "scripts": {
     "build.test": "ts-node tools/build.test",
     "build": "rollup -c",
-    "test": "karma start"
+    "test": "aria test tests --target vue"
   },
   "repository": {
     "type": "git",
@@ -21,11 +21,8 @@
   "homepage": "https://github.com/aelbore/aria-vue-testing#readme",
   "devDependencies": {
     "@types/chai": "^4.1.7",
-    "aria-build": "0.0.3",
-    "aria-test": "git+https://github.com/aelbore/aria-test.git",
-    "rollup-plugin-vue": "^5.0.0",
-    "typescript": "^3.5.1",
-    "vue-template-compiler": "2.6.10"
+    "aria-vue": "0.0.2",
+    "typescript": "^3.5.1"
   },
   "dependencies": {
     "vue": "2.6.10"
